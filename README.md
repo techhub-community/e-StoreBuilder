@@ -1,5 +1,7 @@
 # HacktoberFest-2021 🏆
 
+![Techhub-Hacktoberfest2021](https://raw.githubusercontent.com/anjali112-bit/Posters/main/Techhub/estore.png)
+
 #### 🎯 HacktoberFest - The month long festival for developers
 
 - This repository aims to give an introduction as to how the Open Source World functions. Use this project to make your first contribution to an open-source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
