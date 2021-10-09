@@ -40,8 +40,7 @@ Star the repo by pressing the topmost-right button to start your wonderful journ
 
 You can get your own fork/copy of [e-StoreBuilder](https://github.com/techhub-community/e-StoreBuilder) by using the <kbd><b>Fork</b></kbd></a> button on top-right of your screen.
 
- [![Fork Button](https://help.github.com/assets/images/help/repository/fork_button.jpg)](https://github.com/ietebitmesra/Hacktoberfest-21/)
-
+ [![Fork Button](https://help.github.com/assets/images/help/repository/fork_button.jpg)]
 
 ### 2. Clone it :busts_in_silhouette:
 
@@ -54,11 +53,11 @@ $ git clone https://Your_Username//e-StoreBuilder.git
 ```
 
 > This makes a local copy of the repository in your machine.
-Once you have cloned the `Hacktoberfest-21` repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows(PowerShell to be used).
+Once you have cloned the `e-StoreBuilder` repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows(PowerShell to be used).
 
 ```sh
-# This will change directory to a folder Hacktoberfest-21
-$ cd Hacktoberfest-21
+# This will change directory to a folder e-StoreBuilder
+$ cd e-StoreBuilder
 ```
 
 Move to this folder for all other commands.
@@ -110,7 +109,7 @@ $ git fetch --all --prune
 $ git checkout master
 # Reset local `master` branch to match the `upstream` repository's `master` branch
 $ git reset --hard upstream/master
-# Push changes to your forked `Hacktoberfest-21` repo
+# Push changes to your forked `e-StoreBuilder` repo
 $ git push origin master
 ```
 
@@ -179,23 +178,35 @@ Idea images:
 
 ## About The Project:
 
-This is an e-store builder, using which you can setup your own online store without any prerequisite knowledge of software development. We would like the application to be responsive and helpful to it's users.
+This is an e-store builder, using which you can setup your own online store without any prerequisite knowledge of software development. We would like the application to be responsive and helpful to its users.
 
 We would also like to add support for frontend and backend part of user's online store by managing their 
 order details,payment details and customer feedbacks.
 
 **Features:**
 
-1. Add Navbar (Home, Explore, About, etc..(as needed))
+1. Add Navbar (Home, Search, Profile etc..(as needed))
 
 2. Better background
 
-12. Make UI better
+3. Make UI better
 
-13. Make application responsive.
+4. Add cart feature
+
+5. Search & Filter
+
+6. Card view for items
+
+7. User Profile
+
+8. Order History
+
+9. Payment functionality
+
+10. Make application responsive
 
 
-**Optional Feature:**
+
 
 
 
@@ -203,11 +214,9 @@ order details,payment details and customer feedbacks.
 
 1. Users may open their own issues and also can implement any other awesome feature if they wish(as long as it is relevant to the project).
 
-2. You may refer to docs of the api at .
+2. We are using Next.js for frontend.
 
-3. We are using Next.js in this app.
-
-4. You are always welcome to make the code functionality better and faster.
+3. You are always welcome to make the code functionality better and faster.
 
 Any small/big but useful changes are welcome. Hope, it would be a great learning experience for you all :D
 
