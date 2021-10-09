@@ -38,7 +38,7 @@ Star the repo by pressing the topmost-right button to start your wonderful journ
 
 You can get your own fork/copy of [e-StoreBuilder](https://github.com/techhub-community/e-StoreBuilder) by using the <kbd><b>Fork</b></kbd></a> button on top-right of your screen.
 
- [![Fork Button](https://help.github.com/assets/images/help/repository/fork_button.jpg)](https://github.com/ietebitmesra/Hacktoberfest-21/)
+ [![Fork Button](https://help.github.com/assets/images/help/repository/fork_button.jpg)]
 
 
 ### 2. Clone it :busts_in_silhouette:
@@ -52,11 +52,11 @@ $ git clone https://Your_Username//e-StoreBuilder.git
 ```
 
 > This makes a local copy of the repository in your machine.
-Once you have cloned the `Hacktoberfest-21` repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows(PowerShell to be used).
+Once you have cloned the `e-StoreBuilder` repository in Github, move to that folder first using change directory command on Linux, Mac, and Windows(PowerShell to be used).
 
 ```sh
 # This will change directory to a folder Hacktoberfest-21
-$ cd Hacktoberfest-21
+$ cd e-StoreBuilder
 ```
 
 Move to this folder for all other commands.
