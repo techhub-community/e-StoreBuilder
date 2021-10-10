@@ -4,9 +4,12 @@
 
 <hr>
 
+
+# E-Store Builder
+
 ## About The Project:
 
-This is an e-store builder, using which you can setup your own online store without any prerequisite knowledge of software development. We would like the application to be responsive and helpful to its users.
+👩‍💻 This is an e-store builder, using which you can setup your own online store without any prerequisite knowledge of software development. We would like the application to be responsive and helpful to its users.
 
 We would also like to add support for frontend and backend part of user's online store by managing their 
 order details,payment details and customer feedbacks.
@@ -81,7 +84,7 @@ upstream  https://github.com/Remote_Username/e-StoreBuilder.git (push)
 
 **(g) Once the issue is fixed, just give us a Pull Request, and you are done!!**
 
-**Any small/big but useful changes are welcome. Hope, it would be a great learning experience for you all :D**
+**Any small/big but useful changes are welcome 🙏. Hope, it would be a great learning experience for you all :D**
 
 **Congratulations !!** **🥳**
 
