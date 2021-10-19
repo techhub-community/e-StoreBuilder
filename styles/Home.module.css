@@ -1,7 +1,44 @@
-.box {
+.content {
+  width: 85%;
+  margin: 45px auto;
+}
+
+.content_header {
   width: 100%;
-  height: 75vh;
+}
+.content_header,
+.address__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.address__container {
+  gap: 10px;
+}
+
+.locate_btn {
+  background-color: #000;
+  color: #fff;
+  width: 155px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 49px;
+  gap: 5px;
+  border-radius: 65px;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-shadow: 1px 10px 10px 0 rgba(0, 0, 0, 0.115);
+}
+.remove_location_btn {
+  background-color: rgb(255, 38, 0);
+}
+
+@media screen and (max-width: 968px) {
+  .locate_btn {
+    margin-top: 15px;
+    border-radius: 3px;
+  }
 }
