@@ -62,6 +62,19 @@
   align-items: center;
   justify-content: center;
   color: #707070;
+  position: relative;
+}
+.cart_count {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 4, 4);
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .navButton svg {

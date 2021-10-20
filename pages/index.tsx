@@ -8,6 +8,8 @@ import Cookies from "js-cookie"
 import axios from "axios";
 import WhatsappFab from "../components/WhatsappFab/WhatsappFab";
 import FeaturedOffer from "../components/FeaturedOffer/FeaturedOffer";
+import {AppContext} from "../contexts/AppContext"
+import {useEffect,useContext} from "react"
 const getDetails = async (lat, long) => {
   try {
     const r = await axios.get(
@@ -21,6 +23,10 @@ const getDetails = async (lat, long) => {
 
 
 export default function Home() {
+
+  const {user,setUser} = useContext(AppContext);
+
+  
 
   const [address,setAddress] = React.useState(Cookies.get('location'))
   const [button_label,setLabel] = React.useState(Cookies.get('location')?'Remove Location':'Locate')
