@@ -6,6 +6,8 @@ import Navbar from "../components/Navbar/Navbar";
 import {FiMapPin} from "react-icons/fi"
 import Cookies from "js-cookie"
 import axios from "axios";
+import WhatsappFab from "../components/WhatsappFab/WhatsappFab";
+import FeaturedOffer from "../components/FeaturedOffer/FeaturedOffer";
 const getDetails = async (lat, long) => {
   try {
     const r = await axios.get(
@@ -73,11 +75,19 @@ export default function Home() {
           <div className={styles.content_header}>
           <div className={styles.header__textual}>
           <h3 className="text-3xl font-bold">Explore Store</h3>
-          <span>{address}</span>
+          <span>{address && address.length>55&&address.slice(0, 55)+".."}</span>
           </div>
           <span className={styles.address__container}> <button className={`${styles.locate_btn} ${Cookies.get('location') && styles.remove_location_btn}`} onClick={!Cookies.get('location')?handleGetLocation:removeLocation}><span>{button_label}</span> {!Cookies.get('location') && <FiMapPin/>}</button></span>
           </div>
+
+          <div className={styles.featured__offers}>
+            <FeaturedOffer Image={"https://cdn3.mydukaan.io/app/image/489x280/?url=https://dukaan-us.s3.amazonaws.com/5146415/e9966f63-6d90-4c2e-95f7-480a3015c9eb/image-81a3ae48-f234-4242-80ae-6894cd4019c2.png"}/>
+            <FeaturedOffer Image={"https://cdn3.mydukaan.io/app/image/489x280/?url=https://dukaan-us.s3.amazonaws.com/5146415/e9966f63-6d90-4c2e-95f7-480a3015c9eb/image-5593ba2f-abb5-4850-917f-78c44db77924.png"}/>
+            <FeaturedOffer Image={"https://cdn3.mydukaan.io/app/image/489x280/?url=https://dukaan-us.s3.amazonaws.com/5146415/e9966f63-6d90-4c2e-95f7-480a3015c9eb/image-527ff8ef-f2f7-4660-8327-92319cf51017.png"}/>
+            
+          </div>
         </div>
+        <WhatsappFab/>
       </main>
     </div>
   );

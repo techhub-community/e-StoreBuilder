@@ -36,6 +36,18 @@
   background-color: rgb(255, 38, 0);
 }
 
+.featured__offers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  gap: 15px;
+  overflow-x: scroll;
+  margin: 25px auto;
+}
+.featured__offers::-webkit-scrollbar {
+  width: 0px;
+}
 @media screen and (max-width: 968px) {
   .locate_btn {
     margin-top: 15px;

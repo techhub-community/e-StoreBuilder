@@ -1,0 +1,18 @@
+.feature_offer_card {
+  min-width: 320px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+.feature_offer_card img {
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+.feature_offer_card:hover img {
+  transform: scale(1.04);
+}
