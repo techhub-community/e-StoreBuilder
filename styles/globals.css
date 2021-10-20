@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  transition: all 0.5s ease-in;
 }
 
 a {
@@ -17,4 +18,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #262626;
+  }
+  /* body svg {
+    fill: #fff;
+  } */
+
+  h3,
+  span {
+    color: #fff;
+  }
 }

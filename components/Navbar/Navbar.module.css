@@ -94,3 +94,13 @@
     justify-content: center;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .brand__logo {
+    color: #fff;
+  }
+  .nav__searchbar {
+    background-color: #707070;
+    color: #fff;
+  }
+}
