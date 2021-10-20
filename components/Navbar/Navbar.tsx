@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {FiSearch,FiShoppingBag,FiMenu} from "react-icons/fi"
 import {BiCategory,BiUser} from "react-icons/bi"
 import styles from "./Navbar.module.css"
+import { AppContext } from '../../contexts/AppContext'
 function NavOption({Icon,text}){
+    const {cart,setCart,user} = useContext(AppContext);
     return (
         <button className={styles.navButton}>
             {Icon}
             <span>{text}</span>
+            {text==="Bag" && <span className={styles.cart_count}>{cart.items.length}</span>}
         </button>
     )
 
 }
 function Navbar() {
+
+    const {user} = useContext(AppContext);
     return (
         <nav className={styles.header}>
             <div className={styles.header__container}>
