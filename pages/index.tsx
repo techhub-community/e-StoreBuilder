@@ -10,6 +10,7 @@ import WhatsappFab from "../components/WhatsappFab/WhatsappFab";
 import FeaturedOffer from "../components/FeaturedOffer/FeaturedOffer";
 import {AppContext} from "../contexts/AppContext"
 import {useEffect,useContext} from "react"
+import Footer from "../components/Footer/Footer";
 const getDetails = async (lat, long) => {
   try {
     const r = await axios.get(
@@ -94,6 +95,7 @@ export default function Home() {
           </div>
         </div>
         <WhatsappFab/>
+        <Footer/>
       </main>
     </div>
   );
