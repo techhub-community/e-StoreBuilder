@@ -1,21 +1,19 @@
 import React, { useContext } from 'react'
-import Link from 'next/link'
 import {FiSearch,FiShoppingBag,FiMenu} from "react-icons/fi"
 import {BiCategory,BiUser} from "react-icons/bi"
 import styles from "./Navbar.module.css"
 import { AppContext } from '../../contexts/AppContext'
-
-const NavOption = React.forwardRef(({Icon,text,onClick, href}, ref) => {
+function NavOption({Icon,text}){
     const {cart,setCart,user} = useContext(AppContext);
     return (
-        <button className={styles.navButton} ref={ref}  href={href} onClick={onClick}>
+        <button className={styles.navButton}>
             {Icon}
             <span>{text}</span>
             {text==="Bag" && <span className={styles.cart_count}>{cart.items.length}</span>}
         </button>
     )
 
-})
+}
 function Navbar() {
 
     const {user} = useContext(AppContext);
@@ -32,9 +30,7 @@ function Navbar() {
                         </div>
 
                         <div className={styles.nav__right}>
-                        <Link href="/categories" passHref>
                             <NavOption text="Categories" Icon={<BiCategory/>}/>
-                        </Link>
                             <NavOption text="Bag" Icon={<FiShoppingBag/>}/>
                             <NavOption text="Account" Icon={<BiUser/>}/>
 
