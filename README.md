@@ -7,7 +7,7 @@
 
 # E-Store Builder
 
-## About The Project:
+## About The Project
 
 👩‍💻 This is an e-store builder, using which you can setup your own online store without any prerequisite knowledge of software development. We would like the application to be responsive and helpful to its users.
 
