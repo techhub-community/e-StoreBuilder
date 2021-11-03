@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import {FiMapPin} from "react-icons/fi";
 import Cookies from "js-cookie";
 import axios from "axios";
-import WhatsappFab from "../components/WhatsappFab/WhatsappFab";
+import WhatsappFab from "../components/WhatsappFab";
 import FeaturedOffer from "../components/FeaturedOffer";
 import {AppContext} from "../contexts/AppContext"
 import {useEffect,useContext} from "react"
