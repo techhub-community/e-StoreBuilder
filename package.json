@@ -17,7 +17,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "sass": "^1.42.1"
+    "sass": "^1.42.1",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "@types/react": "^17.0.33",
