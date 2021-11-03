@@ -2,15 +2,17 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react"
 import styles from "../styles/Home.module.css";
-import Navbar from "../components/Navbar/Navbar";
-import {FiMapPin} from "react-icons/fi"
-import Cookies from "js-cookie"
+import Navbar from "../components/Navbar";
+import {FiMapPin} from "react-icons/fi";
+import Cookies from "js-cookie";
 import axios from "axios";
 import WhatsappFab from "../components/WhatsappFab/WhatsappFab";
-import FeaturedOffer from "../components/FeaturedOffer/FeaturedOffer";
+import FeaturedOffer from "../components/FeaturedOffer";
 import {AppContext} from "../contexts/AppContext"
 import {useEffect,useContext} from "react"
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/Footer";
+
+
 const getDetails = async (lat, long) => {
   try {
     const r = await axios.get(
