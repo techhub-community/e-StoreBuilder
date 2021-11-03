@@ -3,8 +3,6 @@ import { ThemeProvider } from "next-themes";
 import {AppProvider} from "../contexts/AppContext"
 import { AppProps } from "next/dist/shared/lib/router/router";
 
-
-
 function MyApp({ Component, pageProps } :AppProps) {
   return (
    
